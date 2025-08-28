@@ -9,5 +9,12 @@ import numpy as np
 import constants
 
 class Simulation:
-    def __init__():
+    def __init__(self, particle_list):
+        self.particles = particle_list
+        self.data = []
+        
+    def acceleration():
+        
+        
+    def rk4_step():
         

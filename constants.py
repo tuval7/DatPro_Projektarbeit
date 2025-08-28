@@ -2,7 +2,7 @@
 """
 Created on Tue Jul 15 14:06:22 2025
 
-@author: tobia
+@author: tuval7
 """
 
 """
@@ -11,9 +11,11 @@ Zentrale Abspeicherung der Konstanten
 
 g = -10
 
-m = 1
+mass = 1
 
-q = 50
+charge = 50
 
 box_size = [100, 100]
+
+dt = 0.001
 
