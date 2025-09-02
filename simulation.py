@@ -8,6 +8,7 @@ Created on Tue Jul 15 13:57:39 2025
 import numpy as np
 import pandas as pd
 from box import Box
+from energy import total_energy
 from constants import g, dt, T, charge
 
 """
@@ -69,7 +70,7 @@ class Simulation:
                 self.box.reflect(particle, old_state[i], i)
                 
             t = step * dt
-            row = [t]
+            row = [t, total_energy(self.particles)]
             for particle in self.particles:
                 row.extend(particle.state)
             self.data.append(row)
