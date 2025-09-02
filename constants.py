@@ -6,7 +6,7 @@ Created on Tue Jul 15 14:06:22 2025
 """
 
 """
-Zentrale Abspeicherung der Konstanten
+Zentrale Abspeicherung der Konstanten.
 """
 
 g = -10.0

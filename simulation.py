@@ -10,6 +10,18 @@ import pandas as pd
 from box import Box
 from constants import g, dt, T, charge
 
+"""
+Über die Simulation-Klasse laufen die meisten Berechnungen. 
+Zum einen werden die Zeitschritte berchnet. Die Berechnung ist in drei Routinen aufgeteilt.
+In der acceleration-Routine wird die Beschleinigung die ein Teilchen erfärt berechnet. 
+Diese wird in der dgl-Routine benutzt um eine neuen state-Vektor zu bestimmen,
+welcher im Runge-Kutta-Step, der dritten Routine, verwendet wird,
+um die Berechnung des Zeitschritts für das Teilchen abzuschließen.
+Die run-Routine sorgt dafür, dass alle Zeitschritte für alle Teilchen durchlaufen werden,
+die Teichen an der Boxwand reflektiern und alle Daten abgespeichert werden.
+
+"""
+
 class Simulation:
     def __init__(self, particle_list):
         self.particles = particle_list

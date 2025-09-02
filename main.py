@@ -8,6 +8,11 @@ Created on Tue Jul 15 13:59:24 2025
 from particle import Particle
 from simulation import Simulation
 
+"""
+Die Mainmethode startet die Simulation und hier lassen sich die Startwerte der
+beliebig vielen Teilchen eingeben.
+"""
+
 if __name__ == "__main__":
 
     particle_list = [
