@@ -15,9 +15,12 @@ mass = 1.0
 
 charge = 50.0
 
-box_size = [100, 100]
-
 dt = 0.001
 
 T  = 10.0
+
+box_xmin = 0.0
+box_xmax = 100.0
+box_ymin = 0.0
+box_ymax = 100.0
 

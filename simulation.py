@@ -7,12 +7,14 @@ Created on Tue Jul 15 13:57:39 2025
 
 import numpy as np
 import pandas as pd
+from box import Box
 from constants import g, dt, T, charge
 
 class Simulation:
     def __init__(self, particle_list):
         self.particles = particle_list
         self.data = []
+        self.box = Box(self)
         
     def acceleration(self, i, pos):
         xi, yi = pos
@@ -45,10 +47,14 @@ class Simulation:
     def run(self):
         steps = int(T / dt)
         for step in range(steps):
+            old_state = [particle.state.copy() for particle in self.particles]
             
             for i, particle in enumerate(self.particles):
                 f = self.dgl(i)
                 particle.state = self.rk4_step(f, particle.state, dt)
+                
+            for i, particle in enumerate(self.particles):
+                self.box.reflect(particle, old_state[i], i)
                 
             t = step * dt
             row = [t]
