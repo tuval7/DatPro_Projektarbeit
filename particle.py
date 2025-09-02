@@ -19,6 +19,3 @@ class Particle:
     
     def copy(self):
         return Particle(self.state)
-    
-    
-    #comit   #############################################
