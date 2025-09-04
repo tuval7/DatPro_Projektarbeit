@@ -19,7 +19,7 @@ Diese wird in der dgl-Routine benutzt um eine neuen state-Vektor zu bestimmen,
 welcher im Runge-Kutta-Step, der dritten Routine, verwendet wird,
 um die Berechnung des Zeitschritts für das Teilchen abzuschließen.
 Die run-Routine sorgt dafür, dass alle Zeitschritte für alle Teilchen durchlaufen werden,
-die Teichen an der Boxwand reflektiern und alle Daten abgespeichert werden.
+die Teilchen an der Boxwand reflektieren und alle Daten abgespeichert werden.
 
 """
 

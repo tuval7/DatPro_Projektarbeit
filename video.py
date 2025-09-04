@@ -14,12 +14,12 @@ from constants import T
 """
 Mit Hilfe von matplotlib pyplot und animation lässt sich ein Video aus den Daten erstellen.
 Zuerst werden die Dauer des Videos und die Frameanzal fesgelegt.
-Außerdem werden die Positiondaten ausgelesen und so aufbereitet, 
-dass sie für das Animationupdate nutzbar sind.
+Außerdem werden die Positionsdaten ausgelesen und so aufbereitet, 
+dass sie für das Animationsupdate nutzbar sind.
 Dann wird die Figur mit Koordinatensystem und den Teilchen als blauen Punkten erstellt.
 Die Erstellung des Videos läuft über eine update-Funktion, die nach und nach 
 die einzelen Frames mit den Punkten zu jedem Zeitpunkt berechnet. 
-Diese Bilder werden zu einem Video (gif) zusammen gefügt und abgespeichert.
+Diese Bilder werden zu einem Video (gif mit pillow) zusammengefügt und abgespeichert.
 """
  
 time = T

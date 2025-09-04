@@ -10,13 +10,13 @@ from particle import Particle
 from simulation import Simulation
 
 """
-Die unittest Klasse testet verschiedenen Fälle der Simulation.
-Der erste Test überprüft, ob die Energie bei einer Einteilchensimulation am Ende 
-immer noch erhalten bleibt.
-Der zweite Test überprüft, ob die Reflektion an den Boxwänden funktioniert,
+Die unittest-Klasse testet verschiedenen Fälle der Simulation.
+Der erste Test überprüft, ob die Energie bei einer Einteilchensimulation
+(freier Fall) am Ende immer noch erhalten bleibt.
+Der zweite Test überprüft, ob die Reflextion an den Boxwänden funktioniert,
 indem geguckt wird, ob die x- und y-Koordinaten sich alle innerhalb der Box 
 (mit kleinem Fehler) befinden.
-Der dritte Test überprüft, die Abstoßung unter den Teichen.
+Der dritte Test überprüft die Abstoßung unter den Teilchen.
 Zwei Teilchen die anfangs noch aufeinander zu fliegen sollten am Ende 
 der Simulationszeit einen größeren Abstand haben, da sie sich abstoßen, 
 bevor sie durch die Reflexion an den Boxwänden wieder aufeinander zu fliegen.

@@ -10,7 +10,7 @@ from constants import mass, charge
 
 """
 Grundlegende Klasse die die einzelene Teilchen als state-Vektoren abspeichert. 
-Außerdem eine repr-Methode und eine Methode und eine Routine zum Kopieren der Zustände.
+Außerdem eine repr-Methode und eine Routine zum Kopieren der Zustände.
 """
 
 class Particle:

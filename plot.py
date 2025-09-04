@@ -9,7 +9,7 @@ import pandas as pd
 import matplotlib.pyplot as plt 
 
 """
-Dieses Programm liest die outputdatei mit pandas aus und plotet mit matplotlib 
+Dieses Programm liest die output-Datei mit pandas aus und plotet mit matplotlib 
 die Gesamtenergie gegen die Zeit, die Bahn des ersten Teilchens isoliert 
 und dann die Bahnen aller Teilchen in einem Plot. 
 Alle Plots werden abgespeichert.

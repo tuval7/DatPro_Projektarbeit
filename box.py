@@ -9,16 +9,16 @@ import numpy as np
 from constants import box_xmin, box_xmax, box_ymin, box_ymax, dt
 
 """
-Die Box-Klasse überprüft, ob die Teichen beim letzten Zeitschritt außerhalb der
-Box gelandet sind und berchnet falls das passiert ist den Zeitschritt neu, 
-unterteilt in den Teil bis zum Stoß und danach. 
+Die Box-Klasse überprüft, ob die Teilchen beim letzten Zeitschritt außerhalb der
+Box gelandet sind, berchnet, falls das passiert ist, den Zeitschritt neu und 
+unterteilt ihn in zwei Teile (bis zum Stoß und danach). 
 Dazu werden erst die Zeitanteile der beiden Schritte berchnet, 
 indem geguckt wird wie die Streckenanteile sind.
 Danach wird vom ursprünglichen state-Vektor aus der erste Zeitschritt wieder
 mittels Runge-Kutta berechnet.
-Dann werden die Geschwindigkeiten entsrechend umgekehrt,
-da es sich um einen idealen Stoßhandelt.
-Danach kann der restliche Zeitschritt berechnet werden,.
+Dann werden die Geschwindigkeiten entsprechend umgekehrt,
+da es sich um einen idealen Stoß handelt.
+Danach kann der restliche Zeitschritt berechnet werden.
 """
 
 class Box:
