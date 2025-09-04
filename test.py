@@ -45,7 +45,7 @@ class TestSimulation(unittest.TestCase):
         y_values = [row[3] for row in sim.data]
         self.assertTrue(min(x_values) >= -0.05 and max(x_values) <= 100.05)
         self.assertTrue(min(y_values) >= -0.05 and max(y_values) <= 100.05)
-     
+    
     def test_particle_repulsion(self):
         particle1 = Particle(40.0, 50.0, 1.0, 0.0)
         particle2 = Particle(60.0, 50.0, -1.0, 0.0)
@@ -63,7 +63,7 @@ class TestSimulation(unittest.TestCase):
         energy_end = df[-1][1]
         delta_E = abs(energy_start - energy_end)
         self.assertLess(delta_E, 0.1)
-        
+      
     def test_straight_motion(self):
         particle = Particle(10.0, 10.0, 5.0, 0.0)
         sim = Simulation([particle])
