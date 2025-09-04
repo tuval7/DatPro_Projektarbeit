@@ -15,7 +15,7 @@ und dann die Bahnen aller Teilchen in einem Plot.
 Alle Plots werden abgespeichert.
 """
 
-df = pd.read_csv("output.txt", sep='\t', header=None)
+df = pd.read_csv("output.txt", sep="\t", header=None)
 n = (df.shape[1] - 2) // 4
 
 plt.figure()
